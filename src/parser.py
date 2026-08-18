@@ -84,6 +84,6 @@ def parse_screentime_csv(file) -> Tuple[pd.DataFrame, str]:
 
 if __name__ == '__main__':
     # quick smoke test with sample file
-    sample = 'c:\\Users\\ranvi\\OneDrive\\Documents\\Iphone_Dashboard_Agentic_Dashboard\\sample_data\\screentime_sample.csv'
+    sample = 'c:\\Users\\ranvi\\OneDrive\\Documents\\Iphone_Dashboard_Agentic_Dashboard\\sample_data\\your_screentime.csv'
     df, _ = parse_screentime_csv(sample)
     print(df.head())

@@ -36,7 +36,8 @@ Note: this is a private repo, so you'll need to be added as a collaborator on Gi
 
 ## Usage
 
-- Upload your exported Screen Time CSV, or use the included sample under `sample_data`.
+- The app loads `sample_data/your_screentime.csv` automatically — this is real Screen Time
+  export data, not a placeholder.
 - The app shows total usage by app and usage over time.
 
 ## Notes
