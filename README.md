@@ -1,28 +1,44 @@
 # iPhone Screen Time Dashboard (Streamlit)
 
-Simple Streamlit dashboard to visualize iPhone Screen Time exports (CSV). Minimal parser + sample data included.
+A simple web dashboard that turns an iPhone Screen Time export (CSV) into charts —
+which apps you use the most, how your usage changes day to day, and totals for a
+chosen date range. Built with [Streamlit](https://streamlit.io), pandas, and Plotly.
 
-Quick start
+## How this project came together
 
-1. Create a Python venv and install requirements:
+1. Wrote the app in Python: [src/parser.py](src/parser.py) reads the CSV and cleans it up
+   into a simple `date, app, minutes` table, and [src/app.py](src/app.py) uses Streamlit to
+   turn that table into filters, KPIs, and charts.
+2. Pushed the code to a private GitHub repo (this one) so it's version-controlled and shareable.
+3. Connected that GitHub repo to [Streamlit Community Cloud](https://share.streamlit.io), which
+   automatically installs `requirements.txt` and runs the app on their servers — giving anyone
+   with the link a live version, with no setup on their end.
+
+## Run it yourself
+
+If you'd rather run the code locally instead of using the hosted link, clone the repo and
+run these commands in a terminal, in order:
 
 ```bash
+git clone https://github.com/rpatil09/Iphone-Dashboard-AIProject.git
+cd Iphone-Dashboard-AIProject        # now inside the project root, everything below runs from here
+
 python -m venv .venv
-.venv\Scripts\activate
+.venv\Scripts\activate               # Windows — on Mac/Linux use: source .venv/bin/activate
 pip install -r requirements.txt
-```
-
-2. Run the app:
-
-```bash
 streamlit run src/app.py
 ```
 
-Usage
+This opens the dashboard at `http://localhost:8501` in your browser.
+
+Note: this is a private repo, so you'll need to be added as a collaborator on GitHub before
+`git clone` will work, and you'll be prompted to sign in to GitHub the first time.
+
+## Usage
 
 - Upload your exported Screen Time CSV, or use the included sample under `sample_data`.
 - The app shows total usage by app and usage over time.
 
-Notes
+## Notes
 
 - If your Screen Time export has different column names, open `src/parser.py` and adapt the mapping.
