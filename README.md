@@ -48,7 +48,3 @@ Note: this is a private repo, so you'll need to be added as a collaborator on Gi
 - The app loads `sample_data/your_screentime.csv` automatically — this is real Screen Time
   export data, not a placeholder.
 - The app shows total usage by app and usage over time.
-
-## Notes
-
-- If your Screen Time export has different column names, open `src/parser.py` and adapt the mapping.
