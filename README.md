@@ -8,11 +8,11 @@ chosen date range. Built with [Streamlit](https://streamlit.io), pandas, and Plo
 
 1. Wrote the app in Python: [src/parser.py](src/parser.py) reads the CSV and cleans it up
    into a simple `date, app, minutes` table, and [src/app.py](src/app.py) uses Streamlit to
-   turn that table into filters, KPIs, and charts.
+   turn that table into filters, stats, and charts.
 2. Pushed the code to a private GitHub repo (this one) so it's version-controlled and shareable.
-3. **Future plan:** connect this GitHub repo to [Streamlit Community Cloud](https://share.streamlit.io)
-   so it auto-installs `requirements.txt` and runs the app on their servers — giving anyone with
-   the link a live version, with no setup on their end. Not done yet — for now, running it means
+3. **Future plan:** connect this GitHub repo to [Streamlit Community Cloud](https://share.streamlit.io),
+   so it auto-installs `requirements.txt` and runs the app on their servers, giving anyone with
+   the link a live version, with no setup on their end. Not done yet, so for now, running it means
    following the local setup below.
 
 ## Tools used
